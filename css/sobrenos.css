@@ -1,0 +1,67 @@
+.sobrenos h1 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.lista-pessoas {
+  margin-top: 100px;
+}
+
+.pessoa {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 50px;
+}
+
+.pessoa img {
+  width: 300px;
+  height: 300px;
+}
+
+.pessoa h2 {
+  font-size: 36px;
+}
+
+.pessoa p {
+  font-size: 28px;
+}
+
+@media (max-width: 1200px) {
+  .pessoa {
+    margin-bottom: 50px;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .pessoa img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pessoa h2 {
+    font-size: 30px;
+  }
+  
+  .pessoa p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .lista-pessoas {
+    margin-top: 50px;
+  }
+
+  .pessoa {
+    grid-template-columns: 1fr;
+  }
+
+  .pessoa h2, .pessoa p {
+    text-align: center;
+  }
+}
